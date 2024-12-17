@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games dream</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+        header {
+            background-color: #1c1c1c;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            color: #0d6325;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #f1f1f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #28a745;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        footer {
+            background-color: #1c1c1c;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .video {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .game {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .game img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .game h3 {
+            color: #28a745;
+        }
+        .reviews p {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .reviews p:hover {
+            background-color: #555;
+        }
+
+        .review-content {
+            display: none;
+        }
+        .show-more {
+            color: #28a745;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game dream</h1>
+    <p>Votre source ultime pour les meilleurs jeux vidéo</p>
+    <nav>
+        <ul>
+            <li><a href="#games">Les Jeux les plus Populaires</a></li>
+            <li><a href="#reviews">Critiques</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cUPyjZUGuys?si=RhIV3KsX8isqCVFd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<section id="games">
+    <h2>Les Jeux les plus Populaires</h2>
+    <div class="game">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.w90975zdSBJHOvj2fL47kAHaDt%26pid%3DApi&f=1&ipt=75df760335508b02ebfca705a918ca02620705d11761291e67130935327aa8e3&ipo=images" alt="Jeu 1">
+        <h3>Minecraft</h3>
+        <p>Voilà, ça arrive enfin, je fais enfin le test de Minecraft alors que j'y joue depuis plus de 6 mois, mais je ne les compte plus! Carrément énorme, l'un des meilleurs jeux auxquels j'ai jamais joué!</p>
+        <span class="show-more" onclick="toggleContent(this)">Lire plus</span>
+        <p class="review-content">Des choses? Artisanat, exploration, construction, démolition, combats, naviguation, minage, multijoueuration :), survie, hardcore, élevage, alchimie, cultures, enchantements, découvertes, manger, enchantements, Enfer, Ender, graphismes, maniabilité, colonisation et création. Voilà en gros tout ce que vous pouvez faire dans Minecraft...</p>
+    </div>
+    <div class="game">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.u4pUHsijFrm8s6nbf_l3hwHaEK%26pid%3DApi&f=1&ipt=f3ea97006988bdd803152326eccf7707dc62afc25e669c4a4eb2ce0e4146f3a6&ipo=images" alt="Jeu 2">
+        <h3>the forest</h3>
+        <p>Ahlala The forest, c'était déjà un hit en devenir pendant l'alpha et voilà qu'il arrive en release !Pour moi c'est simple. C'est le plus flippant des survival si on joue seul.. </p>
+        <span class="show-more" onclick="toggleContent(this)">Lire plus</span>
+        <p class="review-content">Ensuite il fait partie de mon top 2 des survival avec Subnautica.
+            Ce jeu reverse pas mal de surprises et c'est difficile de ne pas spoiler si on veut donner envie d'y jouer mais sachez que vous commencez comme un gros noob dans une forêt relativement hostile et que vous vous surprendrez à vous prendre ensuite un traqueur fou. Vous passerez du statut de gibier à chasseur et cette évolution se fait tout naturellement. C'est un des points fort du jeu.
+            Pêche, chasse, craft, speleo, flippe, ambiance sonore et graphique de dingues, twist scénaristique.... Ce je a tout pour plaire !
+            Enfin j'ai testé le multi à 2. Aucun soucis de deco/reprise de partie.
+            CE JEU EST UNE RÉUSSITE TOTALE.</p>
+    </div>
+    <div class="game">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.3CGRD6lItZVZkPYEDUgOCAHaEK%26pid%3DApi&f=1&ipt=b99a7913152da2a135bb8b21aa6aeca28a7794d462c06097efe167e59fe58ebf&ipo=images" alt="Jeu 3">
+        <h3>God of war</h3>
+        <p>
+           <p> J'aii fait le jeu il y a maintenant 1 an. J'ai eu ne temps de perdre le disque entre temps, mais j'en garde d'incroyables souvenirs, ce plan séquence est juste sublime.</p>
+            <span class="show-more" onclick="toggleContent(this)">Lire plus</span>
+            <p class="review-content">Tout est bon, que ce soit les graphismes, le scénario (il y aura 5 suites donc l'histoire n'est pas finie) ou le gameplay, un des jeux qui m'a donné les meilleures sensations manettes en main.
+            
+            Néanmoins je ne mets pas 20/20, car un autre jeu de cette génération le mérite...
+            </p>
+    </div>
+    <div class="game">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftwistedvoxel.com%2Fwp-content%2Fuploads%2F2021%2F09%2Fgran-turismo-7-1.jpg&f=1&nofb=1&ipt=e12c941f9fd5485279256b0047e2e9d202a060f6990c59520538e74600a5c004&ipo=images" alt="jeu 4">
+        <h3>Grand turismo</h3>
+        <p>
+           <p>La simu ultime de courses automobiles est de retour.
+            Oubliez tout ce que vous avez pu voir chez la concurrence.
+           </p>
+            <span class="show-more" onclick="toggleContent(this)">Lire plus</span>
+            <p class="review-content"> Visuel excellent, sensations de conduite poussées à l'extrême, mode carrière ultra complet avec le retour des permis.
+                Un chef d'œuvre qui s'adresse aux néophytes comme aux passionnés.</p>
+    </div>
+    <div class="game">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.unrealengine.com%2FDiesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1280x720_V04-1280x720-31e7e0e50fda38709553f5313027ba5b76bd10b6.jpg&f=1&nofb=1&ipt=54962f36f6c8d0d3fac2f99c76792c09460e26cf2627b9b19012868c80485aec&ipo=images" alt="Jeu 3">
+        <h3>Grand theft auto</h3>
+        <p>
+           <p> JVC il faudrait peut être un jour modérer les avis de tous les gamins et pro consoleux qui </p>
+            <span class="show-more" onclick="toggleContent(this)">Lire plus</span>
+            <p class="review-content">ruinent la moyenne d'un jeu exceptionnelle. Je crois pas que les PCistes aient fait ça sur les test des version consoles, je me trompe? Et puis tous ceux qui mettent des notes basses parce que leur jeu ne se lance pas, crash, le téléchargement est lent ect.. mais sérieux ici on note le jeu même, pas les soucies techniques relatifs à votre pc qui est surement LA seule source du problème. Possédant un PC qui a trois ans pour ma part, le jeu tourne parfaitement bien et est fluide (60FPS). Sinon GTA 5 et bien, je ne vais pas écrire un pavé pour redire ce qui a surement déjà été dis, mais c'est excellement, très beau, l'histoire est bien ainsi que les personnages, la liberté totale et le online pour la première fois fonctionne très bien, bref Génial !</p>
+    </div>
+    <div class="game">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202206%2F0720%2F0kRqUeSBIbQzz7cen3c989c6.jpg&f=1&nofb=1&ipt=24759560f867eea51ae0fd910a4ba58e93c78216ece37cc1501cab4980736399&ipo=images" alt="Jeu 3">
+        <h3>The last of us</h3>
+        <p>
+           <p> Je n'avais pas acheté le jeu sur ps3 car j'avais la XBOX 360 et j'ai longtemps hésité entre la ONE et la PS4 </p>
+            <span class="show-more" onclick="toggleContent(this)">Lire plus</span>
+            <p class="review-content">et finalement je ne regrette pas moins choix; on est totalement dépaysé, la qualité graphique et sonore est géniale tout comme la narration, la VF est (très) bien, la difficulté est plutôt bien dosée, les personnages sont attachants et les 60 fps font merveilles. Je le recommande à tous ceux qui hésite encore; ce jeu est un monument et une pure merveille.
+            </p>
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Critiques de Jeux</h2>
+    <div class="reviews">
+        <p><strong>Critique du jeux fortnite:</strong> utilisateur n°162</p>
+        <span class="show-more" onclick="toggleContent(this)">Lire plus</span>
+        <p class="review-content">Points positifs :
+            -Jeu plutôt rapide et un peu (et je dis bien UN PEU) stressant sachant que l'on peut se faire attaquer à tout moment.
+            -Sorti sur beaucoup de plateformes
+            -Jeu très bien optimisé
+            Et bah c'est tout pour les points positifs... Quand Fortnite a été annoncé en 2011, Minecraft et Left4Dead étaient à leur apogée. Un jeu de construction/survie ? Un jeu de zombies ? Allez, on fait les deux !!! Voici comment est née cette chimère dégueulasse, un tower defense du cul, avec des mécaniques de jeu repompées sur pleiiiiiin d'autres jeux mieux conçus, et quand PUBG s'est fait connaître, PAF ! Un Battle Royale apparaît !
+            -Skins beaucoup trop chers pour leur utilité (Skin Atypique 8€, Skin Rare 12€, Skin Epique 15€,et un p****n de Skin Légendaire pour 20€...)
+            -Epic Games ces trous du fion : Quand Apex Legends est sorti, ils se sont servis du référencement Google pour que lorsque l'on tape Apex Legends sur Google (attention, c'est répéré), on tombe sur un lien pour télécharger Fortnite. Ca et aussi le fait que ce jeu nul soit tout le temps en tendances YouTube et Twitch. Quand on voit Epic Games racheter à ce point les YouTubeurs Fortnite qui switch sur Apex Legends en quadruplant les revenus des codes créateurs, c'est de la p****n de prostitution..
+            Les devs prennent leurs joueurs pour des pigeons avec leurs skins de merde, sérieusement, 20 balles pour un lapin rose ou une statue de pierre ??!!! Bye.
+            Points négatifs :
+            -Originalité du concept INEXISTANT.</p>
+
+        <p><strong>Critique du jeux spider man 2  :</strong> utilisateur n°135</p>
+        <span class="show-more" onclick="toggleContent(this)">Lire plus</span>
+        <p class="review-content">
+
+            La suite que j'attendais avec impatience.
+            
+            Là où l'expérience de jeu sur Spider-Man Miles Morales m'avait laissé un gout amer, tel un pâle baiser, rêvant encore de son grand Amour (en l’occurrence Spider-Man PS4), ce Spider-Man 2 me fait redécouvrir de vieilles sensations en y apportant une touche de renouveau délectable.
+            
+            L'histoire est tout aussi bien ficelée que le premier volet. On commence crescendo avec Kraven pour finir en apothéose sur l'arc Vénom qui rend enfin hommage à cet immense super-vilain !
+            
+            Toujours aussi impressionnant graphiquement avec quelques améliorations notables, surtout au niveau des textures extérieures.
+            
+            Le gameplay reste sensiblement le même. Les phases de déplacements sont toujours aussi immersives et d'une fluidité hors-norme. On en apprécie aussi la nouveauté qu'apporte le Delta-voile qui, tout comme les phases d'infiltrations et de combats ne sont pas sans rappeler les excellents jeux de la série des Batman Arkham.
+            Il me fallait aussi parler de la jouissance qu'apportent les phases de combats et cette sensation de puissance ultime lorsque l'on invoque les fameux Spider-Man noir, Anti-Vénom et surtout, lors d'un chapitre court mais d'une intensité effroyable, Vénom en personne !
+            
+            Par ailleurs, un grand bravo à Donald Reignoux de nous faire l'honneur de doubler à nouveau notre Tisseur de toiles préféré. <3
+            
+            Pour conclure, ce jeu est un immense shoot de Dopamine pour tout grand fan de Spidey. Il nous emmène exactement là où on l'attend depuis le début, voire parfois, nous surprend d'autant plus par des passages dont on n'aurait même pas osé espérer qu'ils se produisent un jour.
+            Au passage, enfin un jeu qui me fait apprécier acheter une PS5.
+            On espère malgré tout un petit DLC sur Carnage...
+            
+            Merci.
+            </p>
+    </div>
+</section>
+<section id="submit-review">
+    <h2>Soumettez votre critique</h2>
+    <form action="submit_review.php" method="POST">
+        <label for="game-name">Nom du jeu:</label><br>
+        <input type="text" id="game-name" name="game-name" required><br><br>
+
+        <label for="rating">Note (sur 10):</label><br>
+        <select id="rating" name="rating" required>
+            <option value="10">10</option>
+            <option value="9">9</option>
+            <option value="8">8</option>
+            <option value="7">7</option>
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="review-text">Votre critique:</label><br>
+        <textarea id="review-text" name="review-text" rows="10" cols="30" required></textarea><br><br>
+
+        <button type="submit">Soumettre</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Pour toute demande, vous pouvez nous écrire à : <a href="mailto:II@gmail.com">Game dream@gmail.com</a></p>
+</section>
+<section>
+
+
+
+</section>
+<footer>
+    <p>© 2024  Tous droits réservés.Game dream</p>
+</footer>
+
+<script>
+    function toggleContent(element) {
+        const reviewContent = element.nextElementSibling;
+        if (reviewContent.style.display === "none" || reviewContent.style.display === "") {
+            reviewContent.style.display = "block";
+            element.textContent = "Lire moins";
+        } else {
+            reviewContent.style.display = "none";
+            element.textContent = "Lire plus";
+        }
+    }
+</script>
+
+</body>
+</html>
